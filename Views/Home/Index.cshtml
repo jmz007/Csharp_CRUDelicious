@@ -1,0 +1,30 @@
+@using Csharp_CRUDelicious.Models;
+@model List<Dish>
+@{
+    ViewData["Title"] = "CRUDelicius";
+}
+
+<div class="container">
+    <h1><b>Welcome to CRUDelicius</b></h1>
+    <div class="add">
+        <a href="/new" class="btn btn-primary">Add a Dish</a>
+    </div>
+    <div class="dishlist" class="scrollbar" id="style-2" class="force-overflow">
+        <table class="table table-borderless">
+            <div class="sticky">
+                <h5>Check out some recent dishes!</h5>
+                <hr>
+            </div>
+            <tbody>
+            @{foreach (Dish dish in @Model){
+                <tr>
+                    <td scope="col"><a href= "/@dish.DishId">@dish.Name</a> by @dish.Chef</td>
+                </tr>
+                }
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

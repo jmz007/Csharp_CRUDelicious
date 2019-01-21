@@ -1,0 +1,68 @@
+/*Write all of your CSS here*/
+.container{
+
+    padding-top: 10px;
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+.header{
+    width: 50%;
+    margin: auto;
+}
+.add{
+    margin-top: 25px;
+    margin-right: 25%;
+    text-align: right;
+}
+h1{
+    text-align: center;
+}
+hr{
+    width: 90%;
+    margin-left: 5px;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+  }
+.dishlist{
+    margin-top: -30px;
+    margin-left: 30px;
+    height: 400px;
+    overflow-x: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 40%;
+    /* border: 2px solid blue; */
+}
+
+.col-3{
+    padding: 30px;
+    margin: 25px;
+}
+
+#style-2::-webkit-scrollbar-track
+{
+    
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+    
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: grey;
+
+}

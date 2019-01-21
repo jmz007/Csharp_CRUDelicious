@@ -1,0 +1,24 @@
+@using Csharp_CRUDelicious.Models;
+@model Dish
+@{
+    ViewData["Title"] = "View Dish";
+}
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>@Model.Name</h2>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">from chef @Model.Chef</h5>
+            <p class="card-text">@Model.Description</p>
+            <p class="card-text">Calories: @Model.Calories Tastiness: @Model.Tastiness</p>
+
+            <a href="/" class="btn btn-primary">Home</a>
+            <a href="/edit/@Model.DishId" class="btn btn-primary">Edit</a>
+            <a href="/Delete/@Model.DishId" class="btn btn-primary">Delete</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- <button type="button" class="btn btn-dark"onclick="window.location.href=' -->
